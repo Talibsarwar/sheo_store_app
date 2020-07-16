@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 import '../css/Products.css'
 
 export class Products extends Component {
-
     static contextType = DataContext;
-
     render() {
         const { products } = this.context;
         return (
@@ -35,4 +33,4 @@ export class Products extends Component {
     }
 }
 
-export default Products;
+export default Products

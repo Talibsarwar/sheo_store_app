@@ -1,0 +1,21 @@
+.details{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.details img{
+    max-width: 500px;
+    min-width: 290px;
+    height: 300px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.details .box{
+    max-width: 500px;
+    min-width: 290px;
+    margin: 25px;
+}

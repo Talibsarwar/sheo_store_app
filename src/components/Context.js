@@ -71,7 +71,6 @@ export class DataProvider extends Component {
 
     render() {
         const {products} = this.state;
-
         return (
             <DataContext.Provider value={{products}}>
                {this.props.children}

@@ -23,7 +23,7 @@ class Header extends Component {
                     <img src={Menu} alt="" width="20" />
                 </div>
                 <div className="logo">
-                    <h1><Link to="/">Adidas</Link></h1>
+                    <h1><Link to="/">Nike</Link></h1>
                 </div>
                 <nav>
                     <ul className={toggle ? "toggle" : ""}>

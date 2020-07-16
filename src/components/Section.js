@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import Products from './section/Products'
-import Details from './section/Details'
-import { Route } from "react-router-dom"
+import React, { Component } from 'react';
+import Products from './section/Products';
+import Details from './section/Details';
+import { Route } from 'react-router-dom';
 
-export class Section extends Component{
-    render() {
-      return (
-          <section>
-               <Route path="/product" component={Products} />
-               <Route path="/product/:id" component={Details} />
-          </section>
-      )
-    }
+export class Section extends Component {
+  render() {
+    return (
+      <section>
+        <Route path="/product" element={<Products />} exact />
+        <Route path="/product/:id" element={<Details />} />
+      </section>
+    )
   }
-  
-  export default Section
+}
+
+export default Section
