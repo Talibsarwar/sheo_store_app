@@ -5,7 +5,7 @@ import CartIcon from './svg/shopping-cart-solid.svg'
 import { Link } from 'react-router-dom'
 import './css/Header.css'
 
-class Header extends React.Component {
+class Header extends Component {
     
     state = {
         toggle: false
