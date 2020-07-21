@@ -1,51 +1,38 @@
-import React, { Component } from 'react'
-import Menu from './svg/bars-solid.svg'
-import Close from './svg/times-solid.svg'
-import CartIcon from './svg/shopping-cart-solid.svg'
-import { Link } from 'react-router-dom'
-import './css/Header.css'
+import React, { useState } from 'react';
+import Menu from './svg/bars-solid.svg';
+import Close from './svg/times-solid.svg';
+import { Link } from 'react-router-dom';
 
-class Header extends Component {
-    
-    state = {
-        toggle: false
+export default function Header() {
+
+    const [menu, setMenu] = useState(false)
+
+    const toggleMenu = () => {
+        setMenu(!menu)
     }
 
-    menuToggle = () =>{
-        this.setState({toggle: !this.state.toggle})
+    const styleMenu = {
+        left: menu ? 0 : "-100%"
     }
 
-    render() {
-        const {toggle} = this.state;
-        return (
+    return (
+        <div>
             <header>
-                <div className="menu" onClick={this.menuToggle}>
-                    <img src={Menu} alt="" width="20" />
-                </div>
                 <div className="logo">
-                    <h1><Link to="/">Nike</Link></h1>
+                    <h1><a to="/products">Nike Shoes</a></h1>
                 </div>
-                <nav>
-                    <ul className={toggle ? "toggle" : ""}>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/product">Product</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/login">Login / Register</Link></li>
-                        <li className="close" onClick={this.menuToggle}>
-                            <img src={Close} alt="" width="20" />
-                        </li>
-                    </ul>
-                    <div className="nav-cart">
-                        <span>0</span>
-                        <Link to="/cart">
-                        <img src={CartIcon} alt="" width="20" />
-                        </Link>
-                    </div>
-                </nav>
+                <ul style={styleMenu}>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/products">Products</Link></li>
+                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/">Contact</Link></li>
+                    <li><Link to="/">Login / Register</Link></li>
+                    <li onClick={toggleMenu}><img src={Close} alt="Close" width="30" className="menu" /></li>
+                </ul>
+                <div className="menu" onClick={toggleMenu}>
+                    <img src={Menu} alt="Menu" width="30" />
+                </div>
             </header>
-        );
-    }
+        </div>
+    )
 }
-
-export default Header;
