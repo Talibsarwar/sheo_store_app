@@ -22,9 +22,14 @@ code {
   padding: 0 15px;
 }
 
+/*Bk{
+background-image: url(./images/ShoeBanner.png);
+}*/
+
 /*-------Header---------*/
 
 header{
+  background: white;
   width: 100%;
   min-height: 100px;
   overflow: hidden;

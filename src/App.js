@@ -8,19 +8,19 @@ import './App.css';
 
 function App() {
   return (
-    <DataProvider>
-      <div className="App">
-        <Router>
-          <Header />
-          <section>
-            <Routes>
-              <Route path="products" element={<Products />} />
-              <Route path="products/:id" element={<Details />} />
-            </Routes>
-          </section>
-        </Router>
-      </div>
-    </DataProvider>
+      <DataProvider>
+        <div className="App">
+          <Router>
+            <Header />
+            <section>
+              <Routes>
+                <Route path="products" element={<Products />} />
+                <Route path="products/:id" element={<Details />} />
+              </Routes>
+            </section>
+          </Router>
+        </div>
+      </DataProvider>
   );
 }
 
