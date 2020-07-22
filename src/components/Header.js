@@ -22,7 +22,7 @@ export default function Header() {
                     <h1><a to="/products">Nike Shoes</a></h1>
                 </div>
                 <ul style={styleMenu}>
-                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/products">Products</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
