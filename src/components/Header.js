@@ -19,14 +19,14 @@ export default function Header() {
         <div>
             <header>
                 <div className="logo">
-                    <h1><a to="/products">Nike Shoes</a></h1>
+                    <h1><a href="/products">Nike Shoes</a></h1>
                 </div>
                 <ul style={styleMenu}>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/products">Products</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
-                    <li><Link href="/login or register">Login / Register</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/products">Products</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/login or register">Login / Register</Link></li>
                     <li onClick={toggleMenu}><img src={Close} alt="Close" width="30" className="menu" /></li>
                 </ul>
                 <div className="menu" onClick={toggleMenu}>
