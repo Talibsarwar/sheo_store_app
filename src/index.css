@@ -145,7 +145,7 @@ ul li{
 }
 
 .box-details{
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   margin: 20px;
 }
@@ -194,7 +194,7 @@ ul li{
   overflow: hidden;
 }
 
-.box-details .cart{
+.details .cart{
   width: 200px;
   height: 35px;
   text-transform: uppercase;
