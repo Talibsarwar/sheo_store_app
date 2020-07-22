@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Products from './components/Products';
 import About from './components/About';
 import Contact from './components/Contact';
-import Login_Registration from './components/Login or Registration';
+import Registration from './components/Registration';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { DataProvider } from './components/DataProvider';
 import Details from './components/Details';
@@ -21,7 +21,7 @@ function App() {
               <Route path="products/:id" element={<Details />} />
               <Route path="products" element={<About />} />
               <Route path="products" element={<Contact />} />
-              <Route path="products" element={<Login_Registration />} />
+              <Route path="products" element={<Registration />} />
             </Routes>
           </section>
         </Router>

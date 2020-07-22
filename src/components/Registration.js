@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Login_Registration(){
+function Registration(){
     return(
         <div>
 
@@ -8,4 +8,4 @@ function Login_Registration(){
     )
 }
 
-export default Login_Registration;
+export default Registration;
