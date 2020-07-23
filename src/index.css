@@ -227,6 +227,14 @@ footer a{
   text-align: center;
 }
 
+/*------------Home Page---------*/
+.Banner{
+  width: 100%;
+  width: 1016px;
+  height: 1016px;
+  overflow: hidden;
+ }
+
 @media (max-width: 700px){
    header{
      justify-content: space-between;
@@ -256,8 +264,10 @@ footer a{
      right: 20px;
    }
    .Banner{
-    width:"95px";
-    height:"95px";
+    width: 100%;
+    width: 670px;
+    height: 670px;
+    overflow: hidden;
    }
 }
 @media (max-width: 500px){
@@ -270,5 +280,24 @@ footer a{
 .details .img-container{
   height: 350px;
 }
+.Banner{
+  width: 100%;
+  width: 470px;
+  height: 470px;
+  overflow: hidden;
+ }
 }
-
+@media (max-width: 360px){
+  .Banner{
+    width: 100%;
+    width: 330px;
+    overflow: hidden;
+   }
+}
+@media (max-width: 375px){
+  .Banner{
+    width: 100%;
+    width: 345px;
+    overflow: hidden;
+   }
+}
