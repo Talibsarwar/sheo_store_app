@@ -27,8 +27,8 @@ function Footer() {
                 </div>
                 <div className="w-full pt-6 text-center md:text-right flex md:flex-row justify-center">
                     <ul className="text-white">
-                        <li><a className="hover:text-primary transition duration-500 " href="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank"><img src={Linkedin} alt="LinkedIn" width="30" aria-hidden="true" /></a></li>
-                        <li><a className="hover:text-primary  transition duration-500 " href="https://github.com/Talibsarwar" target="_blank" ><img src={Github} alt="Github" width="30" aria-hidden="true" /></a></li>
+                        <li><a className="hover:text-primary transition duration-500 " href="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank"><img src={Linkedin} alt="LinkedIn" width="30"/></a></li>
+                        <li><a className="hover:text-primary  transition duration-500 " href="https://github.com/Talibsarwar" target="_blank" ><img src={Github} alt="Github" width="30"/></a></li>
                     </ul>
                 </div>
             </div>
