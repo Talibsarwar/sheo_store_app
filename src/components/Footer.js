@@ -27,8 +27,8 @@ function Footer() {
                 </div>
                 <div className="w-full pt-6 text-center md:text-right flex md:flex-row justify-center">
                     <ul className="text-white">
-                        <li><a href="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="LinkedIn" width="30"/></a></li>
-                        <li><a href="https://github.com/Talibsarwar" target="_blank" rel="noopener noreferrer"><img src={Github} alt="Github" width="30"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank" rel="noopener noreferrer">Talibsarwar<img src={Linkedin} alt="LinkedIn" width="30"/></a></li>
+                        <li><a href="https://github.com/Talibsarwar" target="_blank" rel="noopener noreferrer"><img src={Github} alt="Github" width="30"/>Talibsarwar</a></li>
                     </ul>
                 </div>
             </div>
