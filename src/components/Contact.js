@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contact(){
     return(
-        <div>
-
+        <div className="Contact">
+              <h1>This Page Is Under Development</h1>
         </div>
     )
 }
