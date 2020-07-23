@@ -228,13 +228,13 @@ footer a{
 }
 
 /*------------Home Page---------*/
-.Banner{
+/*.Banner{
   width: 100%;
   width: 1016px;
   height: 1016px;
   overflow: hidden;
  }
-
+*/
 @media (max-width: 1200px){
   .Banner{
     width: 100%;
