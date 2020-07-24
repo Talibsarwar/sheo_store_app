@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Github from './svg/github-brands.svg';
 import Linkedin from './svg/linkedin-brands.svg';
 
@@ -27,8 +27,8 @@ function Footer() {
                 </div>
                 <div className="w-full pt-6 text-center md:text-right flex md:flex-row justify-center">
                     <ul className="text-white">
-                        <li><Link className="hover:text-primary transition duration-500" to="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank" rel="noopener noreferrer">Talibsarwar<img src={Linkedin} alt="LinkedIn" width="30"/></Link></li>
-                        <li><Link className="hover:text-primary  transition duration-500" to="https://github.com/Talibsarwar" target="_blank" rel="noopener noreferrer">Talibsarwar<img src={Github} alt="Github" width="30"/></Link></li>
+                        <li><a className="hover:text-primary transition duration-500" href="https://www.linkedin.com/in/talib-sarwar-338417189/" target="_blank" rel="noopener noreferrer">Talibsarwar<img src={Linkedin} alt="LinkedIn" width="30" /></a></li>
+                        <li><a className="hover:text-primary  transition duration-500" href="https://github.com/Talibsarwar" target="_blank" rel="noopener noreferrer">Talibsarwar<img src={Github} alt="Github" width="30" /></a></li>
                     </ul>
                 </div>
             </div>
