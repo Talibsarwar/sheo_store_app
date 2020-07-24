@@ -1,5 +1,5 @@
 import React, { useContext, useState, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { DataContext } from './DataProvider';
 import Colors from './Colors';
 import Sizes from './Sizes';
@@ -37,7 +37,7 @@ export default function Details() {
                             <DetailsThumb src={product.src} setIndex={setIndex} />
                             <p>{product.description}</p>
                             <p>{product.content}</p>
-                            <button className="cart">Add to cart</button>
+                            <Link className="cart" to="/cart">Add to cart</Link>
                         </div>
                     </div>
                 ))

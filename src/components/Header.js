@@ -5,7 +5,6 @@ import Close from './svg/times-solid.svg';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
-
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = () => {

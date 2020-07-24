@@ -175,7 +175,9 @@ header .nav-cart span{
   font-size: 2rem;
 }
 
-.box-details button{
+.box-details .cart{
+  text-decoration: none;
+  padding: 10px 25px;
   border: 1px solid #555;
   outline: none;
   background: #333;
