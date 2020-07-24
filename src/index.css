@@ -22,10 +22,6 @@ code {
   padding: 0 15px;
 }
 
-/*Bk{
-background-image: url(./images/ShoeBanner.png);
-}*/
-
 /*-------Header---------*/
 
 header{
@@ -60,6 +56,23 @@ ul li{
 
 .menu{
   display: none;
+}
+
+header .nav-cart{
+  cursor: pointer;
+  position: relative;
+}
+
+header .nav-cart span{
+  position: absolute;
+  top: -12px;
+  right: -7px;
+  background: crimson;
+  font-size: 10px;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .products{
