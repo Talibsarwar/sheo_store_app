@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Menu from './svg/bars-solid.svg';
+import CartIcon from './svg/shopping-cart-solid.svg';
 import Close from './svg/times-solid.svg';
 import { Link } from 'react-router-dom';
 
@@ -18,6 +19,9 @@ export default function Header() {
     return (
         <div>
             <header>
+                <div className="menu" onClick={toggleMenu}>
+                    <img src={Menu} alt="Menu" width="30" />
+                </div>
                 <div className="logo">
                     <h1><a href="/products">Nike Shoes</a></h1>
                 </div>
@@ -29,8 +33,11 @@ export default function Header() {
                     <li><Link to="/login or register">Login / Register</Link></li>
                     <li onClick={toggleMenu}><img src={Close} alt="Close" width="30" className="menu" /></li>
                 </ul>
-                <div className="menu" onClick={toggleMenu}>
-                    <img src={Menu} alt="Menu" width="30" />
+                <div className="nav-cart">
+                    <span>0</span>
+                    <Link to="/cart">
+                        <img src={CartIcon} alt="Cart Icon" width="30" />
+                    </Link>
                 </div>
             </header>
         </div>
