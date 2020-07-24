@@ -5,6 +5,7 @@ import Products from './components/Products';
 import About from './components/About';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
+import Cart from './components/Cart';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { DataProvider } from './components/DataProvider';
 import Details from './components/Details';
@@ -25,6 +26,7 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="registration" element={<Registration />} />
+              <Route path="cart" element={<Cart />} />
             </Routes>
           </section>
           <Footer />
