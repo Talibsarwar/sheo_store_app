@@ -29,7 +29,7 @@ export default function Header() {
                     <li><Link to="/products">Products</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/login or register">Login / Register</Link></li>
+                    <li><Link to="/registration">Login / Register</Link></li>
                     <li onClick={toggleMenu}><img src={Close} alt="Close" width="30" className="menu" /></li>
                 </ul>
                 <div className="nav-cart">
